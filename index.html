@@ -2,29 +2,25 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8" />
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Portfolio</title>
         <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/mediaqueries.css" />
     </head>
     <body>
         <nav id="nav-desktop">
-            <a href="/" class="home-link">
-                <div class="name-logo">Robert Panerio</div>
-            </a>
-            
+            <a href="/" class="name-logo">Robert Panerio</a>
             <div>
                 <ul class="links">
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <nav id="nav-menu">
-            <a href="/">
-                <div class="name-logo">Robert Panerio</div>
-            </a>
+            <a href="/" class="name-logo">Robert Panerio</a>
             <div class="menu-btn">
                 <div class="menu-icon" onclick="clickMenu()">
                     <span></span>
@@ -36,9 +32,28 @@
                     <li><a href="#projects"  onclick="clickMenu()" >Projects</a></li>
                     <li><a href="#experience" onclick="clickMenu()">Experience</a></li>
                     <li><a href="#about" onclick="clickMenu()">About</a></li>
+                    <li><a href="#contact"onclick="clickMenu()">Contact</a></li>
                 </div>
             </div>     
         </nav>
+        <section id="profile">
+            <div class="section_profile-picture">
+                <img src="images/headshot_robp.JPG" alt="Robert Panerio">
+            </div>
+            <div class="section_text">
+                <p class="text-p1">Kumusta!, I'm</p>
+                <h1 class="text_name">Robert Panerio</h1>
+                <p class="text-p2">Computer Science Graduate</p>
+                <div class="section-buttons">
+                    <button class="btn-CV" onclick="window.open('./assets/files/robp_CV.pdf')">Download CV</button>
+                    <button class="btn-contact" onclick="location.href='./#contact'">Contact</button>
+                </div>
+                <div class="social-info">
+                    <img src="./images/github.png" class="github-icon" onclick="location.href='https://www.github.com/robiboo'">
+                    <img src="./images/linkedin.png" class="linkedin-icon" onclick="location.href='https://www.linkedin.com/in/robpanerio/'">
+                </div>
+            </div>
+        </section>
         <script src="/assets/js/main.js"></script>
     </body>
 </html>
