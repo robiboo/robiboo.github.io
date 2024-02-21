@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
     <head>
-        <title>Portfolio of Robert Panerio</title>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="/assets/css/main.css" />
     </head>
     <body>
-        <h1>Welcome to Robert's Portfolio</h1>
+        <nav id="nav-desktop">
+            <a href="/" class="home-link">
+                <div class="name-logo">Robert Panerio</div>
+            </a>
+            
+            <div>
+                <ul class="links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="nav-menu">
+            <a href="/">
+                <div class="name-logo">Robert Panerio</div>
+            </a>
+            <div class="menu-btn">
+                <div class="menu-icon" onclick="clickMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="#projects"  onclick="clickMenu()" >Projects</a></li>
+                    <li><a href="#experience" onclick="clickMenu()">Experience</a></li>
+                    <li><a href="#about" onclick="clickMenu()">About</a></li>
+                </div>
+            </div>     
+        </nav>
+        <script src="/assets/js/main.js"></script>
     </body>
 </html>
