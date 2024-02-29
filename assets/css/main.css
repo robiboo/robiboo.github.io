@@ -270,12 +270,13 @@ section {
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 1.25rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
     border:  #343840 0.1rem solid;
     text-align: center;
+
 }
 
 .section-container {
@@ -314,7 +315,7 @@ section {
     justify-content: space-around;
 }
 
-article{
+article, .project-article{
     display: flex;
     width: 10rem;
     gap: 0.5rem;
@@ -323,4 +324,13 @@ article{
 article .icon{
     cursor: default;
 
+}
+
+#projects {
+    height: auto;
+}
+
+.project-article {
+    flex-direction: column;
+    align-items: center;
 }
