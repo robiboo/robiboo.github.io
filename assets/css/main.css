@@ -1,6 +1,6 @@
 /* General Styling */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Titillium,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 
 *{
@@ -26,22 +26,23 @@ a, .btn {
     transition: all 300ms ease;    
 }
 
-/* Navigation */
+/* Navigation Menu */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
 
 nav, .links {
     display: flex;
     background-color: #343840;
-} 
-
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 15vh;
 }
 
 .links{
     list-style: none; /* to remove the bullet points */
-    gap: 2rem; /* adds a gap between items that are flexed */
+    gap: 1rem; /* adds a gap between items that are flexed */
     font-size: 1.5rem;
 }
 
@@ -53,22 +54,23 @@ a {
 
 a:hover {
     text-decoration: underline;
-    text-underline-offset: 2rem;
+    text-underline-offset: 1rem;
     text-decoration-color: #BDBEBF ;
     color: #BDBEBF;
 }
 
-.name-logo {
-    /* color: white; */
+.name-header {
     font-size: 2.3rem;
 }
 
-.name-logo:hover {
+.name-header:hover {
     cursor: default;
+    text-decoration: none;
 }
 
 /* Menu Icon */
 
+    /* Hide's the Header and hamburger menu on a desktop version */
 #nav-menu {
     display: none;
 }
@@ -99,7 +101,7 @@ a:hover {
     top: 100%;
     right: 0%;
     background-color: white;
-    opacity: 70%;
+    opacity: 100%;
     width:  fit-content;
     max-height: 0;
     overflow: hidden;
@@ -110,7 +112,7 @@ a:hover {
 .menu-links a{
     display: block;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
@@ -150,19 +152,15 @@ a:hover {
 /* Sections */
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
 .section-container {
     display: flex;
+    gap: 2rem;
 }
-
-/* .pic-con{
-    display: flex;
-} */
-
 .profile-rob {
     border-radius: 50%;
 }
@@ -171,10 +169,11 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: auto;
+    padding-bottom: 5rem;
 }
 
-.pic-con{
+.photo-container{
     display: flex;
     height: 400px;
     width: 400px;
@@ -246,6 +245,7 @@ section {
 }
 
 #about {
+    height:auto;
     position: relative;
 }
 
@@ -269,7 +269,7 @@ section {
     border-radius: 4rem;  
 }
 
-.details-container {
+.box-container {
     padding: 1.25rem;
     flex: 1;
     background: white;
@@ -279,12 +279,7 @@ section {
 
 }
 
-.section-container {
-    gap: 3rem;
-    height: 80%;
-}
-
-.pic-con {
+.photo-con {
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -339,7 +334,7 @@ article .icon{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 30vh;
 }
 
 .contact-container {

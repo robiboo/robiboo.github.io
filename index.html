@@ -8,19 +8,26 @@
         <link rel="stylesheet" href="./assets/css/mediaqueries.css" />
     </head>
     <body>
+
+        <!-- Header and Menu (Desktop Version) -->
         <nav id="nav-desktop">
-            <a href="/" class="name-logo">Robert Panerio</a>
+            <a href="/" class="name-header">Robert Panerio</a>
             <div>
+
+                <!-- Anchors for each section -->
                 <ul class="links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#experiences">EXPERIENCES</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
+
+        <!-- Header and Hambuger Menu (Mobile and Smaller Screensize) -->
         <nav id="nav-menu">
-            <a href="/" class="name-logo">Robert Panerio</a>
+            <a href="/" class="name-header">Robert Panerio</a>
             <div class="menu-btn">
                 <div class="menu-icon" onclick="clickMenu()">
                     <span></span>
@@ -28,24 +35,28 @@
                     <span></span>
                 </div>
 
+                <!-- Anchors for each section -->
                 <div class="menu-links">
-                    <li><a href="#about" onclick="clickMenu()">About</a></li>
-                    <li><a href="#experience" onclick="clickMenu()">Experience</a></li>
-                    <li><a href="#projects"  onclick="clickMenu()" >Projects</a></li>
-                    <li><a href="#contact"onclick="clickMenu()">Contact</a></li>
+                    <li><a href="#about" onclick="clickMenu()">ABOUT</a></li>
+                    <li><a href="#experiences" onclick="clickMenu()">EXPERIENCES</a></li>
+                    <li><a href="#projects"  onclick="clickMenu()" >PROJECTS</a></li>
+                    <li><a href="#skills" onclick="clickMenu()">SKILLS</a></li>
+                    <li><a href="#contact"onclick="clickMenu()">CONTACT</a></li>
                 </div>
             </div>     
         </nav>
+
+        <!-- Profile Section -->
         <section id="profile">
-            <div class="pic-con">
+            <div class="photo-container">
                 <img src="./images/grad_photo.jpg" alt="Robert Panerio" class="profile-rob">
             </div>
             <div class="section_text">
                 <p class="text-p1">Kumusta!, I'm</p>
                 <h1 class="text-title">Robert Panerio</h1>
-                <p class="text-p2">Computer Science Graduate</p>
+                <p class="text-p2">Aspiring Software Engineering and Multimedia Designer</p>
                 <div class="section-buttons">
-                    <button class="btn CV" onclick="window.open('./assets/files/robp_CV.pdf')">Download CV</button>
+                    <button class="btn CV" onclick="window.open('./assets/files/robertpanerio_resume_webdev.pdf')">Download CV</button>
                     <button class="btn contact" onclick="location.href='./#contact'">Contact</button>
                 </div>
                 <div id="social-info">
@@ -55,11 +66,12 @@
             </div>
         </section>
 
+        <!-- About Section-->
         <section id="about">
             <p class="text-p1">Get To Know More</p>
             <h1 class="text-title">About me</h1>
             <div class="section-container">
-                <div class="pic-con">
+                <div class="photo-container">
                     <img 
                         src="./images/grad_photo2.jpg" 
                         class="about-icon">
@@ -67,7 +79,7 @@
 
                 <div class="about-detail-con">
                     <div class="about-container">
-                       <div class="details-container">
+                       <div class="box-container">
                             <img
                                 src="./images/education.png"
                                 class="icon"
@@ -78,12 +90,10 @@
                     </div>
                     <div class="text-container">
                         <p>
-                            I was born in Japan and grew up in the Philippines. I migrated to the Washington State in 2017. 
-                            I love to draw, read, travel, and dance. I am also currently learning Japanese in addition to the three languages that I know.
-                            I received my Bachelors of Science in Computer Science in Washington State University last May 2023.
-                            Through my education, I have developed strong foundation in programming languages such as Java, Python, and C. 
-                            My interests are in software development and database management.
-                            Currently, I am working as a private tutor and teaching Math and Science to a grade schooler.
+                            Kamusta! 👋 I am Robert Panerio and I graduated with a Bachelors of Science in Computer Science from Washington State University Vancouver. My academic journey and hands-on experience have equipped me with a solid foundation in. software development and performance optimization, particularly in Python.
+                            During my time at university, I worked on several projects, including file management system using Python. My passion for solving real-world challenges drives me to continuously learn and adapt.
+                            Outside of my professional background, I enjoy exploring new activities, such as learning languages like Japanese, trying different kinds of food, and engaging in various outdoor adventures.
+                            I am actively seeking new opportunities to contribute my skills and grow professionally in a collaborative and dynamic environment. Whether it's through software development or other technical roles, I am eager to take on challenges that make a meaningful impact. Let's connect and explore how I can contribute to your team!
                             
                         </p>
                     </div>
@@ -91,12 +101,13 @@
             </div>
         </section>
 
-        <section id="experience">
+        <!-- Experiences Section -->
+        <section id="experiences">
             <p class="text-p1">About my</p>
             <h1 class="text-title">Experience</h1>
             <div class="experience-con">
                 <div class="about-container">
-                    <div class="details-container">
+                    <div class="box-container">
                         <h2 class="experience-subtitle">Programming Tools</h2>
                         <div class="article-container">
                             <article>
@@ -136,7 +147,7 @@
                             </article>
                         </div>
                     </div>
-                    <div class="details-container">
+                    <div class="box-container">
                         <h2 class="experience-subtitle">Full-stack Development </h2>
                         <div class="article-container">
                             <article>
@@ -180,12 +191,15 @@
             </div>
         </section>
 
+       
+
+        <!-- Projects Section -->
         <section id="projects">
             <p class="text-p1">Browse my</p>
             <h1 class="text-title">Projects</h1>
             <div class="experience-con">
                 <div class="about-container">
-                    <div class="details-container">
+                    <div class="box-container">
                         <h2 class="experience-subtitle">Auto Grading Software Project</h2>
                         <div class="article-container">
                             <article class="project-article">
@@ -194,7 +208,7 @@
                             
                         </div>
                     </div>
-                    <div class="details-container">
+                    <div class="box-container">
                         <h2 class="experience-subtitle">Student Adaptability on Online Classifier</h2>
                         <div class="article-container">
                             <article class="project-article">
@@ -206,7 +220,7 @@
             </div>
             <div class="experience-con">
                 <div class="about-container">
-                    <div class="details-container">
+                    <div class="box-container">
                         <h2 class="experience-subtitle">Sudoku</h2>
                         <div class="article-container">
                             <article class="project-article">
@@ -215,7 +229,7 @@
                             
                         </div>
                     </div>
-                    <div class="details-container">
+                    <div class="box-container">
                         <h2 class="experience-subtitle">Discussion & Anime Review Board</h2>
                         <div class="article-container">
                             <article class="project-article">
@@ -227,6 +241,97 @@
             </div>
         </section>
 
+        <!-- Skills Section -->
+        <section id="skills">
+            <p class="text-p1">Check out my</p>
+            <h1 class="text-title">Skills</h1>
+            <div class="experience-con">
+                <div class="about-container">
+                    <div class="box-container">
+                        <h2 class="experience-subtitle">Programming Tools</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>C</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>Javascript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>Ruby on Rails</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <h2 class="experience-subtitle">Full-stack Development </h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>NodeJS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="images/checkmark.png" class="icon"/>
+                                <div>
+                                    <h3>ReactJS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section-->
         <section id="contact">
             <h1 class="text-title">Contact Me</h1>
             <div class="contact-container">

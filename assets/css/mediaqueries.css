@@ -6,3 +6,29 @@
         display: flex;
     }
 }
+
+/* Add a media query to stack the containers on smaller screens */
+@media screen and (max-width: 1300px) {
+    .section-container {  
+        display: flex;
+        flex-direction: column; /* Stacks them vertically */
+        align-items: center; /* Centers the items */
+        gap: 2rem; /* Adjust gap as needed */
+        height: auto;
+       
+    }
+    .photo-container {
+        justify-content: center;
+    }
+    .text-container {
+        text-align: center;
+    }
+    /* Optional: Adjust the sizes of the photo and text for smaller screens */
+    .about-icon {
+        width: 400px; /* Makes the image smaller on smaller screens */
+        height: 400px;
+    }
+    .about-detail-con {
+        width: 100%; /* Makes the text container fill more space */
+    }
+}
